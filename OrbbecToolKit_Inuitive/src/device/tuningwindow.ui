@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tuningwindow</class>
+ <widget class="QMainWindow" name="tuningwindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>441</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(9, 11, 13);
+QMessageBox QLabel {
+    color: rgb(200, 200, 200);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="styleSheet">
+         <string notr="true">tab{background-color:rgb(9, 11, 13)};
+tab::selected{background-color: rgb(195,200,200)};</string>
+        </property>
+        <property name="currentIndex">
+         <number>3</number>
+        </property>
+        <widget class="QWidget" name="tab_basic">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(9, 11, 13);</string>
+         </property>
+         <attribute name="title">
+          <string>Basic Function</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QCheckBox" name="checkbox_laser">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>Laser</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkbox_ldp">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>LDP</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkbox_flood">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>Flood</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="ckb_ae">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>AE</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,2,1,1">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>IR_Gain:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="eb_gain">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="gain_get_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>get</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+              <property name="checked">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="gain_set_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>set</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,2,1,1">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>IR_Exposure:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="eb_exposure">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="exposure_get_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>get</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="exposure_set_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>set</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,2,1,1">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Laser_current:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="eb_laser">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="laser_get_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>get</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="laser_set_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>set</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,2,1,1">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Laser_Power:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="dsb_laser_power">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);</string>
+              </property>
+              <property name="maximum">
+               <double>1.000000000000000</double>
+              </property>
+              <property name="singleStep">
+               <double>0.010000000000000</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="layser_power_get_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>get</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="layer_power_set_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>set</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,2,1,1">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Distance(mm):</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="eb_distance">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="distance_get_btn">
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>get</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="distance_set_btn">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+              </property>
+              <property name="text">
+               <string>set</string>
+              </property>
+              <property name="checkable">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextBrowser" name="textBrowser">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(195, 213, 229);
+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_clear_log">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+            </property>
+            <property name="text">
+             <string>Clear Log</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Factory</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QPushButton" name="btn_choose_firm_bin">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                </property>
+                <property name="text">
+                 <string>选择固件...</string>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="eb_firmFile">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_9">
+              <item>
+               <widget class="QPushButton" name="btn_choose_calib_bin">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                </property>
+                <property name="text">
+                 <string>选择标定文件...</string>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="eb_calibFile">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <item>
+               <widget class="QPushButton" name="btn_choose_d2c_bin">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                </property>
+                <property name="text">
+                 <string>选择D2C文件...</string>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="eb_D2CFile">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_11">
+              <item>
+               <widget class="QPushButton" name="btn_choose_common_bin">
+                <property name="minimumSize">
+                 <size>
+                  <width>130</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                </property>
+                <property name="text">
+                 <string>选择Common文件...</string>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="eb_commonFile">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QTextBrowser" name="textBrowser_2">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(195, 213, 229);
+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>62</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Command</string>
+         </attribute>
+         <widget class="QPushButton" name="btn_cmder">
+          <property name="geometry">
+           <rect>
+            <x>40</x>
+            <y>40</y>
+            <width>93</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+          </property>
+          <property name="text">
+           <string>Cmder</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>度信设备</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QScrollArea" name="scrollArea">
+            <property name="styleSheet">
+             <string notr="true">color: rgb(195, 213, 229);</string>
+            </property>
+            <property name="widgetResizable">
+             <bool>true</bool>
+            </property>
+            <widget class="QWidget" name="scrollAreaWidgetContents">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>652</width>
+               <height>331</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_12">
+                <item>
+                 <widget class="QPushButton" name="btn_choose_register">
+                  <property name="minimumSize">
+                   <size>
+                    <width>130</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>寄存器配置文件...</string>
+                  </property>
+                  <property name="checkable">
+                   <bool>false</bool>
+                  </property>
+                  <property name="checked">
+                   <bool>false</bool>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="eb_register_file">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <item>
+                 <widget class="QLabel" name="label_fps_10">
+                  <property name="text">
+                   <string>寄存器： 0x</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="led_register_addr">
+                  <property name="text">
+                   <string/>
+                  </property>
+                  <property name="placeholderText">
+                   <string>address</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_fps_11">
+                  <property name="text">
+                   <string> 0x</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="led_register_value">
+                  <property name="placeholderText">
+                   <string>value</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_register_write">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>写入</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_register_read">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>读取</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="1,1,2,1,1">
+                <item>
+                 <widget class="QLabel" name="label_fps_12">
+                  <property name="text">
+                   <string>激光灯电流:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_26">
+                  <property name="text">
+                   <string>范围0~1500mA</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="et_laser_dac_a">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_laser_dac_get">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_laser_dac_set">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>设置</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_14" stretch="1,1,2,1,1">
+                <item>
+                 <widget class="QLabel" name="label_fps_13">
+                  <property name="text">
+                   <string>泛光灯电流:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_28">
+                  <property name="text">
+                   <string>范围0~1500mA</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="et_flood_dac_a">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_flood_dac_get">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_flood_dac_set">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>设置</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="1,1,2,1,1">
+                <item>
+                 <widget class="QLabel" name="label_fps_14">
+                  <property name="text">
+                   <string>曝光时间</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_29">
+                  <property name="text">
+                   <string>单位：1us</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLineEdit" name="et_exposure_value">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);</string>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_exposure_value_get">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>查询</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="btn_exposure_value_set">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(195, 213, 229);
+background-color: rgb(36, 44, 51);</string>
+                  </property>
+                  <property name="text">
+                   <string>设置</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <widget class="QTextBrowser" name="textBrowser_dothin">
+                <property name="styleSheet">
+                 <string notr="true">color: rgb(195, 213, 229);
+</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>698</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="../../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

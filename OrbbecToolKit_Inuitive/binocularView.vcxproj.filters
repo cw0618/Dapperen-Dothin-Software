@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\calculate\calc.cpp">
+      <Filter>calculate</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmd\commandmanager.cpp">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmd\mplaintextedit.cpp">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\cmd\widgetcmd.cpp">
+      <Filter>cmd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config\iniconfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config\minIni.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config\xmlconfig.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config\xmlstreambean.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\csvbean.cpp">
+      <Filter>csv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\csv\CSVFile.cpp">
+      <Filter>csv</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\aibody.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\capturethread.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\imageutils.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\mx6000.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\obstream.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\onisensor.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\OniStream.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\opendevicethread.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\pngparser.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\sensorbase.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\SubStream.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\wmffunction.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog\aboutdialog.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog\capturedialog.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog\messagetip.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog\moredialog.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dialog\streamtestdialog.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\streamtestthread.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderPipeLine.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\renderShader.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\rendertextpipeline.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\mainGLWidget.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\textureBuffer.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\opengl\shape.cpp">
+      <Filter>opengl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\orbbec\ObPng.cpp">
+      <Filter>orbbecPng</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tempcontroler\tempcontroler.cpp">
+      <Filter>tempcontroler</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>mainStyle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindowstyle.cpp">
+      <Filter>mainStyle</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\aistreamcontrol.cpp">
+      <Filter>streamControl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\colorcontrolview.cpp">
+      <Filter>streamControl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\depthcontrolview.cpp">
+      <Filter>streamControl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ircontrolview.cpp">
+      <Filter>streamControl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\phasecontrolview.cpp">
+      <Filter>streamControl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\uvccolorwidget.cpp">
+      <Filter>streamControl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\uvccontrolwidget.cpp">
+      <Filter>streamControl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\videowindow.cpp">
+      <Filter>streamControl</Filter>
+    </ClCompile>
+    <ClCompile Include="src\commoncontrolview.cpp">
+      <Filter>widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\commoncontrolview.cpp">
+      <Filter>widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\commoncontrolwidget.cpp">
+      <Filter>widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\CustomWindow.cpp">
+      <Filter>widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\devicestatuswidget.cpp">
+      <Filter>widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\device\tuningwindow.cpp">
+      <Filter>dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\switchbutton.cpp">
+      <Filter>widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weight\stylecombobox.cpp">
+      <Filter>widget</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pnginfowindow.cpp">
+      <Filter>orbbecPng</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config\xmlregisterbean.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config\RegisterIniFile.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\config\iniconfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config\minIni.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config\xmlconfig.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config\xmlstreambean.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\csv\csvbean.h">
+      <Filter>csv</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\aibody.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\imageutils.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\mx6000.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\obstream.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\obutils.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\onisensor.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\OniStream.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\sensorbase.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\device\SubStream.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderPipeLine.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\renderShader.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\rendertextpipeline.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\textureBuffer.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\opengl\shape.h">
+      <Filter>opengl</Filter>
+    </ClInclude>
+    <ClInclude Include="src\orbbec\ObPng.h">
+      <Filter>orbbecPng</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stb_image.h">
+      <Filter>orbbecPng</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stb_image_write.h">
+      <Filter>orbbecPng</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\OpenNI2\Include\OpenNI.h">
+      <Filter>openni</Filter>
+    </ClInclude>
+    <ClInclude Include="3rd\OpenNI2\Include\PS1080.h">
+      <Filter>openni</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config\xmlregisterbean.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\config\RegisterIniFile.h">
+      <Filter>config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\calculate\calc.h">
+      <Filter>calculate</Filter>
+    </QtMoc>
+    <QtMoc Include="src\cmd\commandmanager.h">
+      <Filter>cmd</Filter>
+    </QtMoc>
+    <QtMoc Include="src\cmd\mplaintextedit.h">
+      <Filter>cmd</Filter>
+    </QtMoc>
+    <QtMoc Include="src\cmd\widgetcmd.h">
+      <Filter>cmd</Filter>
+    </QtMoc>
+    <QtMoc Include="src\csv\csvfile.h">
+      <Filter>csv</Filter>
+    </QtMoc>
+    <QtMoc Include="src\device\capturethread.h">
+      <Filter>device</Filter>
+    </QtMoc>
+    <QtMoc Include="src\device\opendevicethread.h">
+      <Filter>device</Filter>
+    </QtMoc>
+    <QtMoc Include="src\device\pngparser.h">
+      <Filter>device</Filter>
+    </QtMoc>
+    <QtMoc Include="src\device\wmffunction.h">
+      <Filter>device</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog\aboutdialog.h">
+      <Filter>dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog\capturedialog.h">
+      <Filter>dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog\messagetip.h">
+      <Filter>dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog\moredialog.h">
+      <Filter>dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="src\dialog\streamtestdialog.h">
+      <Filter>dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\streamtestthread.h">
+      <Filter>dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="src\opengl\mainGLWidget.h">
+      <Filter>opengl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\tempcontroler\tempcontroler.h">
+      <Filter>tempcontroler</Filter>
+    </QtMoc>
+    <QtMoc Include="src\mainwindowstyle.h">
+      <Filter>mainStyle</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\aistreamcontrol.h">
+      <Filter>streamControl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\colorcontrolview.h">
+      <Filter>streamControl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\depthcontrolview.h">
+      <Filter>streamControl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\ircontrolview.h">
+      <Filter>streamControl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\phasecontrolview.h">
+      <Filter>streamControl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\uvccolorwidget.h">
+      <Filter>streamControl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\uvccontrolwidget.h">
+      <Filter>streamControl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\videowindow.h">
+      <Filter>streamControl</Filter>
+    </QtMoc>
+    <QtMoc Include="src\commoncontrolview.h">
+      <Filter>widget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\commoncontrolview.h">
+      <Filter>widget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\commoncontrolwidget.h">
+      <Filter>widget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\CustomWindow.h">
+      <Filter>widget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\devicestatuswidget.h">
+      <Filter>widget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\device\tuningwindow.h">
+      <Filter>dialog</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\switchbutton.h">
+      <Filter>widget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\weight\stylecombobox.h">
+      <Filter>widget</Filter>
+    </QtMoc>
+    <QtMoc Include="src\pnginfowindow.h">
+      <Filter>orbbecPng</Filter>
+    </QtMoc>
+    <QtMoc Include="src\render\glcolorwindow.h">
+      <Filter>opengl</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resource.qrc">
+      <Filter>resource</Filter>
+    </QtRcc>
+    <QtRcc Include="shader.qrc">
+      <Filter>resource</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\cmd\widgetcmd.ui">
+      <Filter>cmd</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog\aboutdialog.ui">
+      <Filter>dialog</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog\capturedialog.ui">
+      <Filter>dialog</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog\messagetip.ui">
+      <Filter>dialog</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog\moredialog.ui">
+      <Filter>dialog</Filter>
+    </QtUic>
+    <QtUic Include="src\dialog\streamtestdialog.ui">
+      <Filter>dialog</Filter>
+    </QtUic>
+    <QtUic Include="src\mainwindowstyle.ui">
+      <Filter>mainStyle</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\aistreamcontrol.ui">
+      <Filter>streamControl</Filter>
+    </QtUic>
+    <QtUic Include="src\colorcontrolview.ui">
+      <Filter>streamControl</Filter>
+    </QtUic>
+    <QtUic Include="src\depthcontrolview.ui">
+      <Filter>streamControl</Filter>
+    </QtUic>
+    <QtUic Include="src\ircontrolview.ui">
+      <Filter>streamControl</Filter>
+    </QtUic>
+    <QtUic Include="src\phasecontrolview.ui">
+      <Filter>streamControl</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\uvccolorwidget.ui">
+      <Filter>streamControl</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\uvccontrolwidget.ui">
+      <Filter>streamControl</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\videowindow.ui">
+      <Filter>streamControl</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\commoncontrolview.ui">
+      <Filter>widget</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\commoncontrolwidget.ui">
+      <Filter>widget</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\customwindow.ui">
+      <Filter>widget</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\devicestatuswidget.ui">
+      <Filter>widget</Filter>
+    </QtUic>
+    <QtUic Include="src\device\tuningwindow.ui">
+      <Filter>dialog</Filter>
+    </QtUic>
+    <QtUic Include="src\weight\stylecombobox.ui">
+      <Filter>widget</Filter>
+    </QtUic>
+    <QtUic Include="src\pnginfowindow.ui">
+      <Filter>orbbecPng</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\image\add_device.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\capture_video.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\close.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\combobox_ico.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\content_down.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\content_up.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\shader\fragment.frag">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\shader\fragment_color.glsl">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\shader\fragment_shader.glsl">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\full_screen.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\info.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\more.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\oblog_little.ply">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\one_view.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\Orbbec.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\orbbec.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\record_disenable.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\record_enable.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\record_picture.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\record_video.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\refresh_disenable.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\setting.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\setting_style.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\single_screen.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\switch_tip.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\timeclock.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\turn_off.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\turn_on.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\two_view.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\shader\vertex.vert">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\shader\vertex_color.glsl">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\shader\vertex_shader.glsl">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\video_close.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\video_pause.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\video_play.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="res\image\write.png">
+      <Filter>resource</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="calculate">
+      <UniqueIdentifier>{7ab1a2a7-1a8c-4936-949b-60a297cf99b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cmd">
+      <UniqueIdentifier>{1f8bf32b-1b61-4edd-a7b5-66e630ba756f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{cc8678bf-6392-4a64-967f-2c9cd8faa7a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="csv">
+      <UniqueIdentifier>{84ba283e-953d-4ef3-bb53-1d1023ef5700}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device">
+      <UniqueIdentifier>{3786d63c-93e8-4b01-a78d-88ee8b8f9158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dialog">
+      <UniqueIdentifier>{20c3d1fe-3d23-47aa-b18d-04b0940385d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opengl">
+      <UniqueIdentifier>{d4db8222-25bc-437f-9ac2-44aac0190403}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="orbbecPng">
+      <UniqueIdentifier>{d65a427a-ef3e-4671-a162-48530de20dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tempcontroler">
+      <UniqueIdentifier>{397d9bfa-a12b-4753-a701-069b1bb205d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mainStyle">
+      <UniqueIdentifier>{b8b4892f-0b18-434a-9c0b-9f11a665e34a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{ca911f3c-4138-4512-9d81-3700c2c8aaaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="streamControl">
+      <UniqueIdentifier>{0accf27a-32c4-4d9d-b1a3-3c7204628ea2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="widget">
+      <UniqueIdentifier>{46c10d56-c170-4c16-8af6-127fd8cec5a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="openni">
+      <UniqueIdentifier>{a2a0c9c6-589b-4c12-bbcc-b2c9921a3a4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oniRecorder">
+      <UniqueIdentifier>{18af7020-a0ee-4ea3-be88-217260d93de4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="buildobj\moc_predefs.h.cbt">
+      <Filter>resource</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\OrbbecSensor_resource.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

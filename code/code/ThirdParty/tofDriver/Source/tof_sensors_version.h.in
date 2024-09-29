@@ -1,0 +1,21 @@
+/*****************************************************************************
+ *  Orbbec obpng 0.x
+ *  Copyright (C) 2018 by ORBBEC Technology., Inc.
+ *
+ *  This file is part of Orbbec obpng.
+ *
+ *  This file belongs to ORBBEC Technology., Inc.
+ *  It is considered a trade secret, and is not to be divulged or used by
+ * parties who have NOT received written authorization from the owner.
+ *
+ *  Description:
+ *
+ ****************************************************************************/
+
+
+#define TOF_DRIVER_VERSION_MAJOR @TOF_DRIVER_VERSION_MAJOR@
+#define TOF_DRIVER_VERSION_MINOR @TOF_DRIVER_VERSION_MINOR@
+#define TOF_DRIVER_VERSION_BUILD @TOF_DRIVER_VERSION_BUILD@
+#define TOF_DRIVER_VERSION_REVISION @TOF_DRIVER_VERSION_REVISION@
+
+

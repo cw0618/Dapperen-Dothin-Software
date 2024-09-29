@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{8e939bbb-560b-4742-b01a-ec3ef52df5d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DDK">
+      <UniqueIdentifier>{52710008-96c3-4eda-9b6e-30908776ba35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DriverImpl">
+      <UniqueIdentifier>{056c2231-a841-4ed6-bb9c-02a136a9a969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{84a4c5d6-dca7-41c2-8465-5c0d981decde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\DoThin">
+      <UniqueIdentifier>{f5263e50-2aaf-4fa6-aad3-e012e2acc333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Mx6x">
+      <UniqueIdentifier>{ead9ab32-a7c0-4740-a44e-e742df1f0577}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DriverImpl\DataProcess">
+      <UniqueIdentifier>{5416685b-6583-4bf1-a5b3-90527127b22b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DriverImpl\Sensor">
+      <UniqueIdentifier>{3cbfa4b8-d86a-45e9-a12e-260e843a1f8f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\XnBuffer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\XnCore.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\XnCoreStatus.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\XnIOFileStream.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\XnIONetworkStream.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnActualGeneralProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnActualIntProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnActualPropertiesHash.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnActualRealProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnActualStringProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnDDKStatus.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnGeneralProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnIntProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnIntPropertySynchronizer.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnPropertySet.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnRealProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnStringProperty.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\XnExportedOniDriver.cpp">
+      <Filter>DriverImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DoThin\XnDoThinDeviceHelper.cpp">
+      <Filter>Core\DoThin</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DoThin\XnDoThinConnectHelper.cpp">
+      <Filter>Core\DoThin</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DoThin\XnDoThinDeviceEnumeration.cpp">
+      <Filter>Core\DoThin</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Mx6x\XnMx6xModulesHepler.cpp">
+      <Filter>Core\Mx6x</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\DoThin\XnDoThinProtocol.cpp">
+      <Filter>Core\DoThin</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\XnOniDoThinDriver.cpp">
+      <Filter>DriverImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\XnOniDoThinDevice.cpp">
+      <Filter>DriverImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\XnOniDoThinStream.cpp">
+      <Filter>DriverImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\XnDoThinStreamImple.cpp">
+      <Filter>DriverImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnFrameBufferManager.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\DataProcess\XnDoThinDataProcessor.cpp">
+      <Filter>DriverImpl\DataProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\DataProcess\XnDoThinFrameProcessor.cpp">
+      <Filter>DriverImpl\DataProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnDoThinDeviceProperties.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\Mx6x\XnMx6xSLog.cpp">
+      <Filter>Core\Mx6x</Filter>
+    </ClCompile>
+    <ClCompile Include="DDK\XnDoThinStreamProperties.cpp">
+      <Filter>DDK</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\XnOniDoThinColorStream.cpp">
+      <Filter>DriverImpl</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\DataProcess\XnDoThinColorProcessor.cpp">
+      <Filter>DriverImpl\DataProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\DataProcess\Bayer.cpp">
+      <Filter>DriverImpl\DataProcess</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\Sensor\XnTofSensor.cpp">
+      <Filter>DriverImpl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\Sensor\XnPlecoTofSensor.cpp">
+      <Filter>DriverImpl\Sensor</Filter>
+    </ClCompile>
+    <ClCompile Include="DriverImpl\Sensor\XnPlecoTofSensorCalc.cpp">
+      <Filter>DriverImpl\Sensor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\XnBuffer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\XnCoreGlobals.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnActualGeneralProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnActualIntProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnActualPropertiesHash.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnActualRealProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnActualStringProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnGeneralProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnIntProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnIntPropertySynchronizer.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnPropertySetInternal.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnRealProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnStringProperty.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DoThin\XnDoThinDeviceHelper.h">
+      <Filter>Core\DoThin</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DoThin\XnDoThinConnectHelper.h">
+      <Filter>Core\DoThin</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DoThin\XnDoThinDeviceEnumeration.h">
+      <Filter>Core\DoThin</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DoThin\XnDoThinStatus.h">
+      <Filter>Core\DoThin</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mx6x\XnMx6xModules.h">
+      <Filter>Core\Mx6x</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mx6x\XnMx6xProperties.h">
+      <Filter>Core\Mx6x</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mx6x\XnMx6xModulesHepler.h">
+      <Filter>Core\Mx6x</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mx6x\XnMx6xOBCTeeFuns.h">
+      <Filter>Core\Mx6x</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DoThin\XnDoThinProtocol.h">
+      <Filter>Core\DoThin</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\XnOniDoThinDriver.h">
+      <Filter>DriverImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\XnOniDoThinDevice.h">
+      <Filter>DriverImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\XnOniDoThinStream.h">
+      <Filter>DriverImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\XnDoThinStreamImple.h">
+      <Filter>DriverImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnFrameBufferManager.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\DataProcess\XnDoThinDataProcessor.h">
+      <Filter>DriverImpl\DataProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\DataProcess\XnDoThinFrameProcessor.h">
+      <Filter>DriverImpl\DataProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnDoThinDeviceProperties.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mx6x\XnMx6xSLog.h">
+      <Filter>Core\Mx6x</Filter>
+    </ClInclude>
+    <ClInclude Include="DDK\XnDoThinStreamProperties.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mx6x\XnMx6xResolution.h">
+      <Filter>Core\Mx6x</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\XnOniDoThinColorStream.h">
+      <Filter>DriverImpl</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\DataProcess\XnDoThinColorProcessor.h">
+      <Filter>DriverImpl\DataProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\DataProcess\Bayer.h">
+      <Filter>DriverImpl\DataProcess</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\DoThin\XnDoThinConfig.h">
+      <Filter>Core\DoThin</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\Sensor\XnTofSensor.h">
+      <Filter>DriverImpl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\Sensor\XnPlecoTofSensor.h">
+      <Filter>DriverImpl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="DriverImpl\Sensor\XnPlecoTofSensorCalc.h">
+      <Filter>DriverImpl\Sensor</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XnStreamFormats.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Include\XnStreamParams.h">
+      <Filter>DDK</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\Mx6x\tofinfo.h">
+      <Filter>Core\Mx6x</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Resources\OpenNI.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

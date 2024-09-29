@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\DoThin\XnDoThinConnectHelper.cpp" />
+    <ClCompile Include="Core\DoThin\XnDoThinDeviceEnumeration.cpp" />
+    <ClCompile Include="Core\DoThin\XnDoThinDeviceHelper.cpp" />
+    <ClCompile Include="Core\DoThin\XnDoThinProtocol.cpp" />
+    <ClCompile Include="Core\Mx6x\XnMx6xSLog.cpp" />
+    <ClCompile Include="Core\Mx6x\XnMx6xModulesHepler.cpp" />
+    <ClCompile Include="Core\XnBuffer.cpp" />
+    <ClCompile Include="Core\XnCore.cpp" />
+    <ClCompile Include="Core\XnCoreStatus.cpp" />
+    <ClCompile Include="Core\XnIOFileStream.cpp" />
+    <ClCompile Include="Core\XnIONetworkStream.cpp" />
+    <ClCompile Include="DDK\XnActualGeneralProperty.cpp" />
+    <ClCompile Include="DDK\XnActualIntProperty.cpp" />
+    <ClCompile Include="DDK\XnActualPropertiesHash.cpp" />
+    <ClCompile Include="DDK\XnActualRealProperty.cpp" />
+    <ClCompile Include="DDK\XnActualStringProperty.cpp" />
+    <ClCompile Include="DDK\XnDDKStatus.cpp" />
+    <ClCompile Include="DDK\XnDoThinDeviceProperties.cpp" />
+    <ClCompile Include="DDK\XnDoThinStreamProperties.cpp" />
+    <ClCompile Include="DDK\XnFrameBufferManager.cpp" />
+    <ClCompile Include="DDK\XnGeneralProperty.cpp" />
+    <ClCompile Include="DDK\XnIntProperty.cpp" />
+    <ClCompile Include="DDK\XnIntPropertySynchronizer.cpp" />
+    <ClCompile Include="DDK\XnProperty.cpp" />
+    <ClCompile Include="DDK\XnPropertySet.cpp" />
+    <ClCompile Include="DDK\XnRealProperty.cpp" />
+    <ClCompile Include="DDK\XnStringProperty.cpp" />
+    <ClCompile Include="DriverImpl\DataProcess\Bayer.cpp" />
+    <ClCompile Include="DriverImpl\DataProcess\XnDoThinColorProcessor.cpp" />
+    <ClCompile Include="DriverImpl\DataProcess\XnDoThinDataProcessor.cpp" />
+    <ClCompile Include="DriverImpl\DataProcess\XnDoThinFrameProcessor.cpp" />
+    <ClCompile Include="DriverImpl\Sensor\XnPlecoTofSensor.cpp" />
+    <ClCompile Include="DriverImpl\Sensor\XnPlecoTofSensorCalc.cpp" />
+    <ClCompile Include="DriverImpl\Sensor\XnTofSensor.cpp" />
+    <ClCompile Include="DriverImpl\XnDoThinStreamImple.cpp" />
+    <ClCompile Include="DriverImpl\XnOniDoThinColorStream.cpp" />
+    <ClCompile Include="DriverImpl\XnOniDoThinStream.cpp" />
+    <ClCompile Include="DriverImpl\XnExportedOniDriver.cpp" />
+    <ClCompile Include="DriverImpl\XnOniDoThinDevice.cpp" />
+    <ClCompile Include="DriverImpl\XnOniDoThinDriver.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\DoThin\XnDoThinConfig.h" />
+    <ClInclude Include="Core\DoThin\XnDoThinConnectHelper.h" />
+    <ClInclude Include="Core\DoThin\XnDoThinDeviceEnumeration.h" />
+    <ClInclude Include="Core\DoThin\XnDoThinDeviceHelper.h" />
+    <ClInclude Include="Core\DoThin\XnDoThinProtocol.h" />
+    <ClInclude Include="Core\DoThin\XnDoThinStatus.h" />
+    <ClInclude Include="Core\Mx6x\tofinfo.h" />
+    <ClInclude Include="Core\Mx6x\XnMx6xResolution.h" />
+    <ClInclude Include="Core\Mx6x\XnMx6xSLog.h" />
+    <ClInclude Include="Core\Mx6x\XnMx6xModules.h" />
+    <ClInclude Include="Core\Mx6x\XnMx6xModulesHepler.h" />
+    <ClInclude Include="Core\Mx6x\XnMx6xOBCTeeFuns.h" />
+    <ClInclude Include="Core\Mx6x\XnMx6xProperties.h" />
+    <ClInclude Include="Core\XnBuffer.h" />
+    <ClInclude Include="Core\XnCoreGlobals.h" />
+    <ClInclude Include="DDK\XnActualGeneralProperty.h" />
+    <ClInclude Include="DDK\XnActualIntProperty.h" />
+    <ClInclude Include="DDK\XnActualPropertiesHash.h" />
+    <ClInclude Include="DDK\XnActualRealProperty.h" />
+    <ClInclude Include="DDK\XnActualStringProperty.h" />
+    <ClInclude Include="DDK\XnDoThinDeviceProperties.h" />
+    <ClInclude Include="DDK\XnDoThinStreamProperties.h" />
+    <ClInclude Include="DDK\XnFrameBufferManager.h" />
+    <ClInclude Include="DDK\XnGeneralProperty.h" />
+    <ClInclude Include="DDK\XnIntProperty.h" />
+    <ClInclude Include="DDK\XnIntPropertySynchronizer.h" />
+    <ClInclude Include="DDK\XnProperty.h" />
+    <ClInclude Include="DDK\XnPropertySetInternal.h" />
+    <ClInclude Include="DDK\XnRealProperty.h" />
+    <ClInclude Include="DDK\XnStringProperty.h" />
+    <ClInclude Include="DriverImpl\DataProcess\Bayer.h" />
+    <ClInclude Include="DriverImpl\DataProcess\XnDoThinColorProcessor.h" />
+    <ClInclude Include="DriverImpl\DataProcess\XnDoThinDataProcessor.h" />
+    <ClInclude Include="DriverImpl\DataProcess\XnDoThinFrameProcessor.h" />
+    <ClInclude Include="DriverImpl\Sensor\XnPlecoTofSensor.h" />
+    <ClInclude Include="DriverImpl\Sensor\XnPlecoTofSensorCalc.h" />
+    <ClInclude Include="DriverImpl\Sensor\XnTofSensor.h" />
+    <ClInclude Include="DriverImpl\XnDoThinStreamImple.h" />
+    <ClInclude Include="DriverImpl\XnOniDoThinColorStream.h" />
+    <ClInclude Include="DriverImpl\XnOniDoThinStream.h" />
+    <ClInclude Include="DriverImpl\XnOniDoThinDevice.h" />
+    <ClInclude Include="DriverImpl\XnOniDoThinDriver.h" />
+    <ClInclude Include="Include\XnStreamFormats.h" />
+    <ClInclude Include="Include\XnStreamParams.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\Resources\OpenNI.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ThirdParty\PSCommon\XnLib\Source\XnLib.vcxproj">
+      <Project>{72d595bb-8c52-449b-91db-0e9f6aeaf5bb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DepthUtils\DepthUtils.vcxproj">
+      <Project>{72d595bb-8c52-449b-91db-0e9f6aeabbbb}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{c936be8f-32ff-4825-bbba-e98fafc5e7c3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>orbbecRgb</ProjectName>
+    <RootNamespace>orbbecRgb</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)-$(Configuration)\OpenNI2\Drivers\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Intermediate\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)-$(Configuration)\OpenNI2\Drivers\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Intermediate\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)-$(Configuration)\OpenNI2\Drivers\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Intermediate\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Bin\$(Platform)-$(Configuration)\OpenNI2\Drivers\</OutDir>
+    <IntDir>$(SolutionDir)Bin\Intermediate\$(Platform)-$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PS1080_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Include;.\;..\..\..\Include;..\..\..\ThirdParty\PSCommon\XnLib\Include;..\..\DepthUtils;..\..\..\ThirdParty\Orbbec\libdothin\Include;.\Core\DoThin;.\Core\Mx6x;.\DriverImpl\DataProcess;..\..\..\ThirdParty\Orbbec\libtof_depth\include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalOptions>
+      </AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>XnLib.lib;DepthUtils.lib;dtccm2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\libdothin\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\libtof_depth\Win32-Release\</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>false</TreatLinkerWarningAsErrors>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\Include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;PS1080_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Include;.\;..\..\..\Include;..\..\..\ThirdParty\PSCommon\XnLib\Include;..\..\..\ThirdParty\LibJPEG;..\..\..\ThirdParty\Orbbec\Include;..\..\DepthUtils;..\..\..\ThirdParty\Orbbec\libdothin\Include;.\Core\DoThin;.\Core\Mx6x;.\DriverImpl\DataProcess;..\..\..\ThirdParty\Orbbec\libobdepth\Include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <MinimalRebuild>
+      </MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>XnLib.lib;DepthUtils.lib;dtccm2.lib;DtccmKit64.lib;obdepth.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\filter\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\libdothin\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\libobdepth\$(Platform)-$(Configuration)\</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\Include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PS1080_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Include;.\;..\..\..\Include;..\..\..\ThirdParty\PSCommon\XnLib\Include;..\..\DepthUtils;..\..\..\ThirdParty\PSCommon\XnLib\;..\..\..\ThirdParty\LibJPEG;..\..\..\ThirdParty\Orbbec\Include;..\..\..\ThirdParty\Orbbec\libdothin\Include;.\Core\DoThin;.\Core\Mx6x;.\DriverImpl\DataProcess;..\..\..\ThirdParty\Orbbec\libtof_depth\include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>XnLib.lib;DepthUtils.lib;dtccm2.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\libdothin\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\libtof_depth\Win32-Release\</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\Include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;PS1080_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.\Include;.\;..\..\..\Include;..\..\..\ThirdParty\PSCommon\XnLib\Include;..\..\..\ThirdParty\LibJPEG;..\..\..\ThirdParty\Orbbec\Include;..\..\DepthUtils;..\..\..\ThirdParty\Orbbec\libdothin\Include;.\Core\DoThin;.\Core\Mx6x;.\DriverImpl\DataProcess;..\..\..\ThirdParty\Orbbec\libtof_depth\include</AdditionalIncludeDirectories>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>XnLib.lib;DepthUtils.lib;dtccm2.lib;DtccmKit64.lib;obdepth.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)Bin\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\libdothin\$(Platform)-$(Configuration)\;$(SolutionDir)\ThirdParty\Orbbec\libobdepth\$(Platform)-$(Configuration)\</AdditionalLibraryDirectories>
+      <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>..\..\..\Include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,7 @@
+#ifndef _WHICH_CONVERTER_H
+#define _WHICH_CONVERTER_H
+
+
+#define  USE_WHICH_CONVERTER  2
+
+#endif // _WHICH_CONVERTER_H

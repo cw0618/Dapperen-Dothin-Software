@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0B01077F-D6E2-3B84-B4DE-048B3DFC70C0}</ProjectGuid>
+    <RootNamespace>iToFViewer</RootNamespace>
+    <Keyword>QtVS_v303</Keyword>
+    <WindowsTargetPlatformVersion>10.0.10240.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformMinVersion>10.0.14393.0</WindowsTargetPlatformMinVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>Bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>buildobj\</IntermediateDirectory>
+    <PrimaryOutput>iToFViewer</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>Bin\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>buildobj\</IntermediateDirectory>
+    <PrimaryOutput>iToFViewer</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Bin\</OutDir>
+    <IntDir>buildobj\</IntDir>
+    <TargetName>iToFViewer</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Bin\</OutDir>
+    <IntDir>buildobj\</IntDir>
+    <TargetName>iToFViewer</TargetName>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;$(IncludePath)</IncludePath>
+    <LibraryPath>G:\Qt\Qt5.11.1\5.11.1\msvc2015\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtInstall>msvc2015</QtInstall>
+    <QtModules>core;xml;opengl;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>msvc2015</QtInstall>
+    <QtModules>core;xml;opengl;gui;widgets</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>G:\Qt\Qt5.11.1\5.11.1\msvc2015\include;.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;3rd\openni2\Include;3rd;3rd\freetype\include;buildobj;GeneratedFiles;\include;3rd\OpenCV\Include;3rd\tempcontrolsdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>buildobj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>buildobj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;.\3rd\freetype\win32\freetype.lib;.\3rd\GL\glut32.lib;.\3rd\STB_IMAGE\win32\STB_IMAGE.lib;.\3rd\openni2\x86-Release\OpenNI2.lib;.\3rd\obpng\libs\win32\140\obpng.lib;opencv_world3410.lib;.\3rd\tempcontrolsdk\x86\TemperatureControlSdk.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.6.11-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;.\3rd\freetype\win32;.\3rd\STB_IMAGE\win32;.\3rd\openni2\x86-Release;.\3rd\obpng\libs\win32\140;$(OPENCV_DIR);.\3rd\OpenCV\lib\x86\vc14\lib;.\3rd\libtof_depth\lib;.\3rd\ObOniRecorder\x86\ObOniRecorder.lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\iToFViewer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Console</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>buildobj/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>buildobj/</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>.\GeneratedFiles</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.\GeneratedFiles\$(ConfigurationName);.\GeneratedFiles;.;3rd\openni2\Include;3rd;3rd\freetype\include;buildobj;GeneratedFiles;\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>buildobj\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>buildobj\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>shell32.lib;.\3rd\freetype\win32\freetype.lib;.\3rd\GL\glut32.lib;.\3rd\STB_IMAGE\win32\STB_IMAGE.lib;.\3rd\openni2\x86-Release\OpenNI2.lib;.\3rd\obpng\libs\win32\140\obpng.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\opensslx86\lib;C:\Utils\my_sql\mysql-5.6.11-win32\lib;C:\Utils\postgresqlx86\pgsql\lib;.\3rd\freetype\win32;.\3rd\STB_IMAGE\win32;.\3rd\openni2\x86-Release;.\3rd\obpng\libs\win32\140;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\iToFViewer.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;QT_DEPRECATED_WARNINGS;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_XML_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <QtMoc>
+      <CompilerFlavor>msvc</CompilerFlavor>
+      <Include>buildobj/moc_predefs.h</Include>
+      <ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription>
+      <DynamicSource>output</DynamicSource>
+      <QtMocDir>buildobj</QtMocDir>
+      <QtMocFileName>moc_%(Filename).cpp</QtMocFileName>
+    </QtMoc>
+    <QtRcc>
+      <Compression>default</Compression>
+      <ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription>
+      <QtRccDir>$(Configuration)</QtRccDir>
+      <QtRccFileName>qrc_%(Filename).cpp</QtRccFileName>
+    </QtRcc>
+    <QtUic>
+      <ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription>
+      <QtUicDir>.\GeneratedFiles</QtUicDir>
+      <QtUicFileName>ui_%(Filename).h</QtUicFileName>
+    </QtUic>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\cmd\commandmanager.cpp" />
+    <ClCompile Include="src\cmd\mplaintextedit.cpp" />
+    <ClCompile Include="src\cmd\widgetcmd.cpp" />
+    <ClCompile Include="src\config\RegisterIniFile.cpp" />
+    <ClCompile Include="src\config\xmlregisterbean.cpp" />
+    <ClCompile Include="src\csv\CSVFile.cpp" />
+    <ClCompile Include="src\device\aibody.cpp" />
+    <ClCompile Include="src\device\pngparser.cpp" />
+    <ClCompile Include="src\device\wmffunction.cpp" />
+    <ClCompile Include="src\pnginfowindow.cpp" />
+    <ClCompile Include="src\tempcontroler\tempcontroler.cpp" />
+    <ClCompile Include="src\weight\aistreamcontrol.cpp" />
+    <ClCompile Include="src\weight\CustomWindow.cpp" />
+    <ClCompile Include="src\orbbec\ObPng.cpp" />
+    <ClCompile Include="src\device\OniStream.cpp" />
+    <ClCompile Include="src\device\SubStream.cpp" />
+    <ClCompile Include="src\dialog\aboutdialog.cpp" />
+    <ClCompile Include="src\calculate\calc.cpp" />
+    <ClCompile Include="src\colorcontrolview.cpp" />
+    <ClCompile Include="src\dialog\capturedialog.cpp" />
+    <ClCompile Include="src\device\capturethread.cpp" />
+    <ClCompile Include="src\commoncontrolview.cpp" />
+    <ClCompile Include="src\weight\commoncontrolview.cpp" />
+    <ClCompile Include="src\weight\commoncontrolwidget.cpp" />
+    <ClCompile Include="src\csv\csvbean.cpp" />
+    <ClCompile Include="src\depthcontrolview.cpp" />
+    <ClCompile Include="src\weight\devicestatuswidget.cpp" />
+    <ClCompile Include="src\device\imageutils.cpp" />
+    <ClCompile Include="src\config\iniconfig.cpp" />
+    <ClCompile Include="src\ircontrolview.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\opengl\mainGLWidget.cpp" />
+    <ClCompile Include="src\mainwindowstyle.cpp" />
+    <ClCompile Include="src\dialog\messagetip.cpp" />
+    <ClCompile Include="src\config\minIni.cpp" />
+    <ClCompile Include="src\dialog\moredialog.cpp" />
+    <ClCompile Include="src\device\mx6000.cpp" />
+    <ClCompile Include="src\device\obstream.cpp" />
+    <ClCompile Include="src\device\onisensor.cpp" />
+    <ClCompile Include="src\device\opendevicethread.cpp" />
+    <ClCompile Include="src\phasecontrolview.cpp" />
+    <ClCompile Include="src\opengl\renderPipeLine.cpp" />
+    <ClCompile Include="src\opengl\renderShader.cpp" />
+    <ClCompile Include="src\opengl\rendertextpipeline.cpp" />
+    <ClCompile Include="src\device\sensorbase.cpp" />
+    <ClCompile Include="src\opengl\shape.cpp" />
+    <ClCompile Include="src\dialog\streamtestdialog.cpp" />
+    <ClCompile Include="src\weight\streamtestthread.cpp" />
+    <ClCompile Include="src\weight\stylecombobox.cpp" />
+    <ClCompile Include="src\weight\switchbutton.cpp" />
+    <ClCompile Include="src\opengl\textureBuffer.cpp" />
+    <ClCompile Include="src\device\tuningwindow.cpp" />
+    <ClCompile Include="src\weight\uvccolorwidget.cpp" />
+    <ClCompile Include="src\weight\uvccontrolwidget.cpp" />
+    <ClCompile Include="src\weight\videowindow.cpp" />
+    <ClCompile Include="src\config\xmlconfig.cpp" />
+    <ClCompile Include="src\config\xmlstreambean.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\tempcontroler\tempcontroler.h" />
+    <QtMoc Include="src\weight\uvccontrolwidget.h" />
+    <QtMoc Include="src\weight\uvccolorwidget.h" />
+    <QtMoc Include="src\weight\aistreamcontrol.h" />
+    <QtMoc Include="src\weight\CustomWindow.h">
+    </QtMoc>
+    <QtMoc Include="src\device\pngparser.h" />
+    <ClInclude Include="3rd\OpenNI2\Include\OpenNI.h" />
+    <ClInclude Include="3rd\OpenNI2\Include\PS1080.h" />
+    <QtMoc Include="src\cmd\mplaintextedit.h" />
+    <QtMoc Include="src\cmd\widgetcmd.h" />
+    <QtMoc Include="src\cmd\commandmanager.h" />
+    <ClInclude Include="src\config\RegisterIniFile.h" />
+    <ClInclude Include="src\config\xmlregisterbean.h" />
+    <ClInclude Include="src\device\aibody.h" />
+    <QtMoc Include="src\device\wmffunction.h" />
+    <ClInclude Include="src\orbbec\ObPng.h" />
+    <ClInclude Include="src\device\OniStream.h" />
+    <ClInclude Include="src\device\SubStream.h" />
+    <QtMoc Include="src\dialog\aboutdialog.h">
+    </QtMoc>
+    <QtMoc Include="src\calculate\calc.h">
+    </QtMoc>
+    <QtMoc Include="src\colorcontrolview.h">
+    </QtMoc>
+    <QtMoc Include="src\dialog\capturedialog.h">
+    </QtMoc>
+    <QtMoc Include="src\device\capturethread.h" />
+    <QtMoc Include="src\commoncontrolview.h">
+    </QtMoc>
+    <QtMoc Include="src\weight\commoncontrolview.h">
+    </QtMoc>
+    <QtMoc Include="src\weight\commoncontrolwidget.h">
+    </QtMoc>
+    <ClInclude Include="src\csv\csvbean.h" />
+    <QtMoc Include="src\csv\csvfile.h">
+    </QtMoc>
+    <QtMoc Include="src\depthcontrolview.h">
+    </QtMoc>
+    <QtMoc Include="src\weight\devicestatuswidget.h">
+    </QtMoc>
+    <QtMoc Include="src\render\glcolorwindow.h">
+    </QtMoc>
+    <ClInclude Include="src\device\imageutils.h" />
+    <ClInclude Include="src\config\iniconfig.h" />
+    <QtMoc Include="src\ircontrolview.h">
+    </QtMoc>
+    <QtMoc Include="src\opengl\mainGLWidget.h">
+    </QtMoc>
+    <QtMoc Include="src\mainwindowstyle.h">
+    </QtMoc>
+    <QtMoc Include="src\dialog\messagetip.h">
+    </QtMoc>
+    <ClInclude Include="src\config\minIni.h" />
+    <QtMoc Include="src\dialog\moredialog.h">
+    </QtMoc>
+    <ClInclude Include="src\device\mx6000.h" />
+    <ClInclude Include="src\device\obstream.h" />
+    <ClInclude Include="src\device\obutils.h" />
+    <ClInclude Include="src\device\onisensor.h" />
+    <QtMoc Include="src\device\opendevicethread.h">
+    </QtMoc>
+    <QtMoc Include="src\phasecontrolview.h">
+    </QtMoc>
+    <ClInclude Include="src\opengl\renderPipeLine.h" />
+    <ClInclude Include="src\opengl\renderShader.h" />
+    <ClInclude Include="src\opengl\rendertextpipeline.h" />
+    <ClInclude Include="src\device\sensorbase.h" />
+    <ClInclude Include="src\opengl\shape.h" />
+    <QtMoc Include="src\pnginfowindow.h" />
+    <ClInclude Include="src\stb_image.h" />
+    <ClInclude Include="src\stb_image_write.h" />
+    <QtMoc Include="src\dialog\streamtestdialog.h">
+    </QtMoc>
+    <QtMoc Include="src\weight\streamtestthread.h">
+    </QtMoc>
+    <QtMoc Include="src\weight\stylecombobox.h">
+    </QtMoc>
+    <QtMoc Include="src\weight\switchbutton.h">
+    </QtMoc>
+    <ClInclude Include="src\opengl\textureBuffer.h" />
+    <QtMoc Include="src\device\tuningwindow.h">
+    </QtMoc>
+    <QtMoc Include="src\weight\videowindow.h">
+    </QtMoc>
+    <ClInclude Include="src\config\xmlconfig.h" />
+    <ClInclude Include="src\config\xmlstreambean.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="buildobj\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;buildobj\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">buildobj\moc_predefs.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E $(QTDIR)\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;buildobj\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">buildobj\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="src\cmd\widgetcmd.ui" />
+    <QtUic Include="src\dialog\aboutdialog.ui">
+    </QtUic>
+    <QtUic Include="src\colorcontrolview.ui">
+    </QtUic>
+    <QtUic Include="src\dialog\capturedialog.ui">
+    </QtUic>
+    <QtUic Include="src\pnginfowindow.ui" />
+    <QtUic Include="src\weight\aistreamcontrol.ui" />
+    <QtUic Include="src\weight\commoncontrolview.ui">
+    </QtUic>
+    <QtUic Include="src\weight\commoncontrolwidget.ui">
+    </QtUic>
+    <QtUic Include="src\weight\customwindow.ui">
+    </QtUic>
+    <QtUic Include="src\depthcontrolview.ui">
+    </QtUic>
+    <QtUic Include="src\weight\devicestatuswidget.ui">
+    </QtUic>
+    <QtUic Include="src\ircontrolview.ui">
+    </QtUic>
+    <QtUic Include="src\mainwindowstyle.ui">
+    </QtUic>
+    <QtUic Include="src\dialog\messagetip.ui">
+    </QtUic>
+    <QtUic Include="src\dialog\moredialog.ui">
+    </QtUic>
+    <QtUic Include="src\phasecontrolview.ui">
+    </QtUic>
+    <QtUic Include="src\dialog\streamtestdialog.ui">
+    </QtUic>
+    <QtUic Include="src\weight\stylecombobox.ui">
+    </QtUic>
+    <QtUic Include="src\device\tuningwindow.ui">
+    </QtUic>
+    <QtUic Include="src\weight\uvccolorwidget.ui" />
+    <QtUic Include="src\weight\uvccontrolwidget.ui" />
+    <QtUic Include="src\weight\videowindow.ui">
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\image\Orbbec.ico" />
+    <None Include="res\image\add_device.png" />
+    <None Include="res\image\capture_video.png" />
+    <None Include="res\image\close.png" />
+    <None Include="res\image\combobox_ico.png" />
+    <None Include="res\image\content_down.png" />
+    <None Include="res\image\content_up.png" />
+    <None Include="res\shader\fragment.frag" />
+    <None Include="res\shader\fragment_color.glsl" />
+    <None Include="res\shader\fragment_shader.glsl" />
+    <None Include="res\image\full_screen.png" />
+    <None Include="res\image\info.png" />
+    <None Include="res\image\more.png" />
+    <None Include="res\image\one_view.png" />
+    <None Include="res\image\orbbec.png" />
+    <None Include="res\image\record_disenable.png" />
+    <None Include="res\image\record_enable.png" />
+    <None Include="res\image\record_picture.png" />
+    <None Include="res\image\record_video.png" />
+    <None Include="res\image\refresh_disenable.png" />
+    <QtRcc Include="resource.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">resource</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">resource</InitFuncName>
+    </QtRcc>
+    <None Include="res\image\setting.png" />
+    <None Include="res\image\setting_style.png" />
+    <QtRcc Include="shader.qrc">
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">shader</InitFuncName>
+      <InitFuncName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">shader</InitFuncName>
+    </QtRcc>
+    <None Include="res\image\single_screen.png" />
+    <None Include="res\image\switch_tip.png" />
+    <None Include="res\image\timeclock.png" />
+    <None Include="res\image\turn_off.png" />
+    <None Include="res\image\turn_on.png" />
+    <None Include="res\image\two_view.png" />
+    <None Include="res\shader\vertex.vert" />
+    <None Include="res\shader\vertex_color.glsl" />
+    <None Include="res\shader\vertex_shader.glsl" />
+    <None Include="res\image\video_close.png" />
+    <None Include="res\image\video_pause.png" />
+    <None Include="res\image\video_play.png" />
+    <None Include="res\image\write.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\image\oblog_little.ply" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include=".\OrbbecSensor_resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

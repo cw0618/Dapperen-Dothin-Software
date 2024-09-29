@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{f04982ef-8f45-4456-b0d3-26f66c86f824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File">
+      <UniqueIdentifier>{b05a53d8-b3ca-4b76-9fb1-10d1e29a3d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\stmpe801">
+      <UniqueIdentifier>{f5cfc85e-4d05-4330-bebd-5e568e685cb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\s5k33dxx">
+      <UniqueIdentifier>{48baef94-56f8-42ca-bf74-50d8312ee181}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\rk1608">
+      <UniqueIdentifier>{28b95b5f-1850-459f-a69c-d60c2f0a7786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\pleco">
+      <UniqueIdentifier>{37602486-c04f-4d12-87e9-1f4c0c06819b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\mlx75027">
+      <UniqueIdentifier>{cb322cb9-2b9d-4dc2-869c-5bd4833b8aeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\imx627">
+      <UniqueIdentifier>{1a69393b-69dc-49e1-a500-a546da45f02b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\imx518">
+      <UniqueIdentifier>{e659018b-a32b-4ad4-8d7b-f20d650830a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\imx516">
+      <UniqueIdentifier>{12998fdc-5654-4816-8272-ec5509ecd9ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\imx456">
+      <UniqueIdentifier>{e6c2d384-0aaa-49d1-86a5-49275cf2e153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\imx316">
+      <UniqueIdentifier>{8396b92d-3d0c-4140-8289-2d5786604d24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\delay_board">
+      <UniqueIdentifier>{58aa9841-a27c-4c4b-88b7-a6d3f3fd6f13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\cx3">
+      <UniqueIdentifier>{9bea959a-40e7-426f-a3ef-22a333fd5737}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\dapperen100hy">
+      <UniqueIdentifier>{ecc21bc7-122e-4c06-a322-6631215d0e82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source File\gaea">
+      <UniqueIdentifier>{4638e90f-a03d-468d-87de-f5d72d9a0886}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\imx627\imx627.h">
+      <Filter>Source File\imx627</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imx627\imx627_setting\imx627_config.h">
+      <Filter>Source File\imx627</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imx518\imx518.h">
+      <Filter>Source File\imx518</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imx516\imx516.h">
+      <Filter>Source File\imx516</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imx456\imx456.h">
+      <Filter>Source File\imx456</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imx316\imx316.h">
+      <Filter>Source File\imx316</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\delay_board\delay_board.h">
+      <Filter>Source File\delay_board</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\cx3\which_converter.h">
+      <Filter>Source File\cx3</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\pleco\pleco.h">
+      <Filter>Source File\pleco</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rk1608\debug2log.h">
+      <Filter>Source File\rk1608</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rk1608\rk1608.h">
+      <Filter>Source File\rk1608</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rk1608\rk1608_pleco.h">
+      <Filter>Source File\rk1608</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rk1608\rk1608_s5k33dxx.h">
+      <Filter>Source File\rk1608</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rk1608\spi\inc\isp-fw.h">
+      <Filter>Source File\rk1608</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rk1608\spi\inc\msg-interface.h">
+      <Filter>Source File\rk1608</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rk1608\spi\inc\msg-queue.h">
+      <Filter>Source File\rk1608</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\rk1608\spi\inc\spi2apb.h">
+      <Filter>Source File\rk1608</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\s5k33dxx\s5k33dxx.h">
+      <Filter>Source File\s5k33dxx</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\s5k33dxx\s5k33d_setting\s5k33d_config.h">
+      <Filter>Source File\s5k33dxx</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\stmpe801\stmpe801.h">
+      <Filter>Source File\stmpe801</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\project_config.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tof_board.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\tof_sensors.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\include\obcdevice.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\include\obproperty.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\include\obstatus.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\include\tofinfo.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\include\typedef.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mx6xhal\depth_obstatus.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mx6xhal\hw_modules.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mx6xhal\hw_obstatus.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mx6xhal\hw_property.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mx6xhal\ob_resolution.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mx6xhal\obc_tee_funcs.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mlx75027\mlx75027.h">
+      <Filter>Source File\mlx75027</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\mlx75027\mlx75027_max96717_max96716a.h">
+      <Filter>Source File\mlx75027</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\gaea\gaea.h">
+      <Filter>Source File\gaea</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\dapperen100hy\dapperen100hy.h">
+      <Filter>Source File\dapperen100hy</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\imx627\imx627.c">
+      <Filter>Source File\imx627</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imx518\imx518.c">
+      <Filter>Source File\imx518</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imx516\imx516.c">
+      <Filter>Source File\imx516</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imx456\imx456.c">
+      <Filter>Source File\imx456</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imx316\imx316.c">
+      <Filter>Source File\imx316</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\delay_board\delay_board.c">
+      <Filter>Source File\delay_board</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\pleco\pleco.c">
+      <Filter>Source File\pleco</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rk1608\rk1608.c">
+      <Filter>Source File\rk1608</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rk1608\rk1608_pleco.c">
+      <Filter>Source File\rk1608</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rk1608\rk1608_s5k33dxx.c">
+      <Filter>Source File\rk1608</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rk1608\spi\src\isp-fw.c">
+      <Filter>Source File\rk1608</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rk1608\spi\src\msg-interface.c">
+      <Filter>Source File\rk1608</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rk1608\spi\src\msg-queue.c">
+      <Filter>Source File\rk1608</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\rk1608\spi\src\spi2apb.c">
+      <Filter>Source File\rk1608</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\s5k33dxx\s5k33dxx.c">
+      <Filter>Source File\s5k33dxx</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\stmpe801\stmpe801.c">
+      <Filter>Source File\stmpe801</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tof_board.c">
+      <Filter>Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tof_module.cpp">
+      <Filter>Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\tof_sensors.c">
+      <Filter>Source File</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\delay_board\temperature_table\temp_conversion_table.h">
+      <Filter>Source File\delay_board</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imx627\imx627_setting\imx627_single_freq.h">
+      <Filter>Source File\imx627</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imx627\imx627_setting\imx627_single_freq_hard_reset.h">
+      <Filter>Source File\imx627</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imx627\imx627_setting\imx627_dual_freq.h">
+      <Filter>Source File\imx627</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\s5k33dxx\s5k33d_setting\s5k33d_cx3.h">
+      <Filter>Source File\s5k33dxx</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\s5k33dxx\s5k33d_setting\s5k33d_huangshan.h">
+      <Filter>Source File\s5k33dxx</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\s5k33dxx\s5k33d_setting\s5k33d_t200515.h">
+      <Filter>Source File\s5k33dxx</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\s5k33dxx\s5k33d_setting\s5k33d_taishan.h">
+      <Filter>Source File\s5k33dxx</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\mlx75027\mlx75027.c">
+      <Filter>Source File\mlx75027</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\mlx75027\mlx75027_max96717_max96716a.c">
+      <Filter>Source File\mlx75027</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\dapperen100hy\dapperen100hy.c">
+      <Filter>Source File\dapperen100hy</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\gaea\gaea.c">
+      <Filter>Source File\gaea</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

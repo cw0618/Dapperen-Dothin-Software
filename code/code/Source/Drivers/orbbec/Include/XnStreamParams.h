@@ -1,0 +1,347 @@
+/*****************************************************************************
+*                                                                            *
+*  OpenNI 2.x Alpha                                                          *
+*  Copyright (C) 2012 PrimeSense Ltd.                                        *
+*                                                                            *
+*  This file is part of OpenNI.                                              *
+*                                                                            *
+*  Licensed under the Apache License, Version 2.0 (the "License");           *
+*  you may not use this file except in compliance with the License.          *
+*  You may obtain a copy of the License at                                   *
+*                                                                            *
+*      http://www.apache.org/licenses/LICENSE-2.0                            *
+*                                                                            *
+*  Unless required by applicable law or agreed to in writing, software       *
+*  distributed under the License is distributed on an "AS IS" BASIS,         *
+*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  *
+*  See the License for the specific language governing permissions and       *
+*  limitations under the License.                                            *
+*                                                                            *
+*****************************************************************************/
+#ifndef XNSTREAMPARAMS_H
+#define XNSTREAMPARAMS_H
+
+//---------------------------------------------------------------------------
+// Includes
+//---------------------------------------------------------------------------
+#include <XnPlatform.h>
+#include <PS1080.h>
+
+//---------------------------------------------------------------------------
+// Modules Names
+//---------------------------------------------------------------------------
+#define XN_MODULE_NAME_DEVICE       "Device"
+#define XN_MODULE_NAME_FIXED_PARAMS "FixedParams"
+#define XN_MODULE_NAME_SHIFTS       "Shifts"
+
+//---------------------------------------------------------------------------
+// Streams Types
+//---------------------------------------------------------------------------
+#define XN_STREAM_TYPE_DEPTH    "Depth"
+#define XN_STREAM_TYPE_IMAGE    "Image"
+#define XN_STREAM_TYPE_IR       "IR"
+#define XN_STREAM_TYPE_AUDIO    "Audio"
+#define XN_STREAM_TYPE_PHASE    "Phase"
+#define XN_STREAM_TYPE_AI       "AI"
+
+//---------------------------------------------------------------------------
+// Streams Names
+//---------------------------------------------------------------------------
+#define XN_STREAM_NAME_DEPTH    XN_STREAM_TYPE_DEPTH
+#define XN_STREAM_NAME_IMAGE    XN_STREAM_TYPE_IMAGE
+#define XN_STREAM_NAME_IR       XN_STREAM_TYPE_IR
+#define XN_STREAM_NAME_AUDIO    XN_STREAM_TYPE_AUDIO
+#define XN_STREAM_NAME_PHASE    XN_STREAM_TYPE_PHASE
+#define XN_STREAM_NAME_AI       XN_STREAM_TYPE_AI
+
+/* Internal properties - using same structure as private properties - 0x1080FFXX */
+enum
+{
+    //---------------------------------------------------------------------------
+    // General Properties
+    //---------------------------------------------------------------------------
+    XN_STREAM_PROPERTY_TYPE = 0x1080FF00, // "Type"
+    XN_STREAM_PROPERTY_IS_STREAM = 0x1080FF01, // "IsStream"
+    XN_STREAM_PROPERTY_IS_FRAME_BASED = 0x1080FF02, // "IsFrameBased"
+    XN_STREAM_PROPERTY_IS_PIXEL_BASED = 0x1080FF03, // "IsPixelBased"
+    XN_STREAM_PROPERTY_IS_STREAMING = 0x1080FF04, // "IsStreaming"
+
+    /** Integer */
+    XN_MODULE_PROPERTY_LOCK = 0x1080FF05, // "Lock"
+
+    //---------------------------------------------------------------------------
+    // General Stream Properties
+    //---------------------------------------------------------------------------
+    /** Integer */
+    XN_STREAM_PROPERTY_STATE = 0x1080FF10, // "State"
+    /** Integer */
+    XN_STREAM_PROPERTY_REQUIRED_DATA_SIZE = 0x1080FF11, // "RequiredDataSize"
+    /** Integer (OniFormat) */
+    XN_STREAM_PROPERTY_OUTPUT_FORMAT = 0x1080FF12, // "OutputFormat"
+    /** Integer */
+    XN_STREAM_PROPERTY_BUFFER_SIZE = 0x1080FF13, // "BufferSize"
+    /** Boolean */
+    XN_STREAM_PROPERTY_ACTUAL_READ_DATA = 0x1080FF14, // "ActualReadData"
+
+    //---------------------------------------------------------------------------
+    // Frame-Based Stream Properties (Depth, Image, IR)
+    //---------------------------------------------------------------------------
+    /** Integer */
+    XN_STREAM_PROPERTY_FPS = 0x1080FF20, // "FPS"
+
+    //---------------------------------------------------------------------------
+    // Pixel-Based Stream Properties (Depth, Image, IR)
+    //---------------------------------------------------------------------------
+    /** XnResolutions */
+    XN_STREAM_PROPERTY_RESOLUTION = 0x1080FF30, // "Resolution"
+    /** Integer */
+    XN_STREAM_PROPERTY_X_RES = 0x1080FF31, // "XRes"
+    /** Integer */
+    XN_STREAM_PROPERTY_Y_RES = 0x1080FF32, // "YRes"
+    /** Integer */
+    XN_STREAM_PROPERTY_BYTES_PER_PIXEL = 0x1080FF33, // "BytesPerPixel"
+    /** Integer */
+    XN_STREAM_PROPERTY_SUPPORT_MODES_COUNT = 0x1080FF34, // "SupportedModesCount"
+    /** General (XnCmosPreset array) */
+    XN_STREAM_PROPERTY_SUPPORT_MODES = 0x1080FF35, // "SupportedModes"
+    /** OniCropping */
+    XN_STREAM_PROPERTY_CROPPING = 0x1080FF36, // "Cropping"
+
+    //---------------------------------------------------------------------------
+    // Depth Specific Properties
+    //---------------------------------------------------------------------------
+    /** unsigned long long */
+    //minDepth and maxDepth move to PS1080.h
+    //	XN_STREAM_PROPERTY_MIN_DEPTH = 0x1080FF40, // "MinDepthValue"
+    /** unsigned long long */
+    //	XN_STREAM_PROPERTY_MAX_DEPTH = 0x1080FF41, // "MaxDepthValue"
+
+    /** Boolean */
+    XN_STREAM_PROPERTY_REGISTRATION = 0x1080FF42, // "Registration"
+    /** Integer */
+    XN_STREAM_PROPERTY_DEVICE_MAX_DEPTH = 0x1080FF43, // "DeviceMaxDepth"
+
+    //---------------------------------------------------------------------------
+    // IR Specific Properties
+    //---------------------------------------------------------------------------
+    /** Integer */
+    XN_STREAM_PROPERTY_DEVICE_MAX_IR = 0x1080FF48, // "DeviceMaxIR"
+
+    //---------------------------------------------------------------------------
+    // Body Specific Properties (Integer)
+    //---------------------------------------------------------------------------
+    XN_STREAM_PROPERTY_DEVICE_MAX_AI = 0x1080FF49, // "DeviceMaxBody"
+
+    //---------------------------------------------------------------------------
+    // Phase Specific Properties (Integer)
+    //---------------------------------------------------------------------------
+    XN_STREAM_PROPERTY_DEVICE_MAX_PHASE = 0x1080FF4A, // "DeviceMaxPhase"
+
+    //---------------------------------------------------------------------------
+    // Image Specific Properties
+    //---------------------------------------------------------------------------
+    /** Integer */
+    XN_STREAM_PROPERTY_QUALITY = 0x1080FF51, // "Quality"
+
+    //---------------------------------------------------------------------------
+    // Audio Specific Properties
+    //---------------------------------------------------------------------------
+    /** XnSampleRate */
+    XN_STREAM_PROPERTY_SAMPLE_RATE = 0x1080FF60, // "SampleRate"
+    /** Integer */
+    XN_STREAM_PROPERTY_LEFT_CHANNEL_VOLUME = 0x1080FF61, // "LeftChannelVolume"
+    /** Integer */
+    XN_STREAM_PROPERTY_RIGHT_CHANNEL_VOLUME = 0x1080FF62, // "RightChannelVolume"
+    /** Integer */
+    XN_STREAM_PROPERTY_NUMBER_OF_CHANNELS = 0x1080FF63, // "NumOfChannels"
+    /** Boolean */
+    XN_STREAM_PROPERTY_IS_STEREO = 0x1080FF64, // "IsStereo"
+    /** Integer */
+    XN_STREAM_PROPERTY_READ_MODE = 0x1080FF65, // "ReadMode"
+    /** Integer */
+    XN_STREAM_PROPERTY_READ_CHUNK_SIZE = 0x1080FF66, // "ReadChunkSize"
+    /** Integer */
+    XN_STREAM_PROPERTY_READ_SYNC = 0x1080FF67, // "AudioReadSync"
+
+    ///< Metadata.
+    XN_STREAM_PROPERTY_METADATA_LINE = 0x1080FF68,
+
+    ///< TOF Frequency Mode.
+    XN_STREAM_PROPERTY_FREQUENCY_MODE = 0x1080FF6B,
+
+    //---------------------------------------------------------------------------
+    // DeviceParams Properties
+    //---------------------------------------------------------------------------
+    /** Integer */
+    XN_MODULE_PROPERTY_NUMBER_OF_BUFFERS = 0x1080FF70, // "NumberOfBuffers"
+    /** Boolean */
+    XN_MODULE_PROPERTY_READ_DATA = 0x1080FF71, // "ReadData"
+    /** Integer */
+    XN_MODULE_PROPERTY_READ_WRITE_MODE = 0x1080FF72, // "ReadWriteMode"
+    /** Boolean */
+    XN_MODULE_PROPERTY_FRAME_SYNC = 0x1080FF73, // "FrameSync"
+    /* XnDynamicSizeBuffer */
+    XN_MODULE_PROPERTY_FIXED_PARAMS = 0x1080FF76, // "FixedParams"
+    /** Integer */
+    XN_MODULE_PROPERTY_ERROR_STATE = 0x1080FF79, // "ErrorState"
+    /** Boolean */
+    XN_MODULE_PROPERTY_AUDIO_SUPPORTED = 0x1080FF7D, // "AudioSupported"
+    /** Boolean */
+    XN_MODULE_PROPERTY_IMAGE_SUPPORTED = 0x1080FF7E, // "ImageSupported"
+    /** Boolean */
+    XN_MODULE_PROPERTY_PHASE_SUPPORTED = 0x30800000, // "PhaseSupported"
+    /** Boolean */
+    XN_MODULE_PROPERTY_AI_SUPPORTED = 0x30800001, // "AISupported"
+};
+
+//---------------------------------------------------------------------------
+// Defines
+//---------------------------------------------------------------------------
+#define XN_GAIN_AUTO  0U
+
+#define XN_QVGA_X_RES 320
+#define XN_QVGA_Y_RES 240
+#define XN_VGA_X_RES  640
+#define XN_VGA_Y_RES  480
+#define XN_VGAS_Y_RES 400
+#define XN_SXGA_X_RES 1280
+#define XN_SXGA_Y_RES 1024
+#define XN_UXGA_X_RES 1600
+#define XN_UXGA_Y_RES 1200
+
+//---------------------------------------------------------------------------
+// Enums - values of various properties
+//---------------------------------------------------------------------------
+typedef enum XnResolutions
+{
+    XN_RESOLUTION_CUSTOM = -1,
+    XN_RESOLUTION_QVGA = 0, // 320x240
+    XN_RESOLUTION_VGA = 1, // 640x480
+    XN_RESOLUTION_SXGA = 2, // 1280x1024
+    XN_RESOLUTION_UXGA = 3, // 1600x1200
+    XN_RESOLUTION_QQVGA = 4, // 160x120
+    XN_RESOLUTION_QCIF = 5, // 176x144
+    XN_RESOLUTION_240P = 6, // 432x240
+    XN_RESOLUTION_CIF = 7, // 352x288
+    XN_RESOLUTION_WVGA = 8, // 640x360
+    XN_RESOLUTION_480P = 9, // 864x480
+    XN_RESOLUTION_800_448 = 10, // 800x448
+    XN_RESOLUTION_SVGA = 11, // 800x600
+    XN_RESOLUTION_576P = 12, // 1024x576
+    XN_RESOLUTION_DV = 13, // 960x720
+    XN_RESOLUTION_720P = 14, // 1280x720
+    XN_RESOLUTION_1280_960 = 15, // 1280x960
+    //support Astra 2
+    XN_RESOLUTION_1280_800 = 16, // 1280x800
+    XN_RESOLUTION_640_400 = 17, // 640x400
+    //astralive
+    XN_RESOLUTION_320_180 = 18,   //320*180
+    XN_RESOLUTION_160_90 = 19,   //160*90
+    XN_RESOLUTION_320_200 = 20,  //320x200
+
+    XN_RESOLUTION_480_640 = 21,    //480x640
+    XN_RESOLUTION_1080_1280 = 22,   //1080x1280
+    XN_RESOLUTION_540_640 = 23,   //540x640
+    XN_RESOLUTION_960_1280 = 25,   //960x1280
+    //superD2
+    XN_RESOLUTION_800_1280 = 26, // 800x1280
+    XN_RESOLUTION_400_640 = 27, // 400x640
+    XN_RESOLUTION_720_960 = 28, //720x960
+    XN_RESOLUTION_1024_1280 = 29, //1024x1280
+    //Cybertron 
+    XN_RESOLUTION_1328_1120 = 30, //1328x1120
+    //P3X
+    XN_RESOLUTION_384_640 = 31,  //384x640
+    XN_RESOLUTION_1280_1120 = 32,  //1280x1120
+    XN_RESOLUTION_664_560 = 33,  //664x560
+    XN_RESOLUTION_640_560 = 34,  //640x560
+    XN_RESOLUTION_960_1120 = 35,  //960x1120
+    XN_RESOLUTION_480_560 = 36,  //480x560
+
+    XN_RESOLUTION_800_450 = 37,
+    XN_RESOLUTION_1920_1080 = 38,
+    XN_RESOLUTION_2560_1440 = 39,
+    XN_RESOLUTION_3840_2160 = 40,
+    XN_RESOLUTION_1920_480 = 41,
+
+    XN_RESOLUTION_640_960 = 42,
+    XN_RESOLUTION_640_600 = 43,
+    XN_RESOLUTION_960_240 = 44,
+	XN_RESOLUTION_720_180 = 45,
+	XN_RESOLUTION_360_90 = 46,
+	XN_RESOLUTION_240_180 = 47,
+	XN_RESOLUTION_120_90 = 48,
+	XN_RESOLUTION_192_45 = 49,
+	XN_RESOLUTION_64_45 = 50,
+	XN_RESOLUTION_96_20 = 51,
+	XN_RESOLUTION_32_20 = 52,
+	XN_RESOLUTION_528_140 = 53,
+	XN_RESOLUTION_176_140 = 54,
+} XnResolutions;
+
+typedef enum XnSampleRate
+{
+    XN_SAMPLE_RATE_8K = 8000,
+    XN_SAMPLE_RATE_11K = 11025,
+    XN_SAMPLE_RATE_12K = 12000,
+    XN_SAMPLE_RATE_16K = 16000,
+    XN_SAMPLE_RATE_22K = 22050,
+    XN_SAMPLE_RATE_24K = 24000,
+    XN_SAMPLE_RATE_32K = 32000,
+    XN_SAMPLE_RATE_44K = 44100,
+    XN_SAMPLE_RATE_48K = 48000,
+} XnSampleRate;
+
+typedef enum
+{
+    XN_MODE_PS = 0,
+    XN_MODE_MAINTENANCE = 1,
+    XN_MODE_SAFE_MODE = 2,
+} XnParamCurrentMode;
+
+typedef enum
+{
+    XN_VIDEO_STREAM_OFF = 0,
+    XN_VIDEO_STREAM_COLOR = 1,
+    XN_VIDEO_STREAM_DEPTH = 2,
+    XN_VIDEO_STREAM_IR = 3,
+    XN_VIDEO_STREAM_AUDIO = 4,
+    XN_VIDEO_STREAM_PHASE = 5,
+    XN_VIDEO_STREAM_AI = 6,
+} XnVideoStreamMode;
+
+typedef enum
+{
+    XN_AUDIO_STREAM_OFF = 0,
+    XN_AUDIO_STREAM_ON = 1,
+} XnAudioStreamMode;
+
+//---------------------------------------------------------------------------
+// Data Structures - structures that are arguments to properties
+//---------------------------------------------------------------------------
+
+#pragma pack (push, 1)
+
+typedef struct XnDynamicSizeBuffer
+{
+    void* pData;
+    XnUInt32 nMaxSize;
+    XnUInt32 nDataSize;
+} XnDynamicSizeBuffer;
+
+typedef struct XnCmosPreset
+{
+    XnUInt16 nFormat;
+    XnUInt16 nResolution;
+    XnUInt16 nFPS;
+} XnCmosPreset;
+
+typedef struct
+{
+    XnUInt16 type; ///< @see XnCMOSType
+    XnUInt16 endpoint;
+} XnStreamSet;
+
+#pragma pack (pop)
+
+#endif // XNSTREAMPARAMS_H
